@@ -25,7 +25,7 @@ var bot1;
 var paredecImg;
 var pinoImg, arbolImg, lamparaImg, arbustoImg, autoImg;
 var boton1;
-
+var bot1;
 var blockGroup;
 var pisoGroup;
 var laserGroup;
@@ -141,6 +141,9 @@ spider.debug=true
 
 spider.setCollider("rectangle", 0, 0, 500, 900)
 
+  
+bot1=createSprite(200, 300, 20, 20)
+  
 //piso invisible
 invisibleground=createSprite(3400, 590, 7000, 50)
 invisibleground.visible=false; 
@@ -811,3 +814,11 @@ function lavavol(){
 
 
 }
+
+
+function touchStarted(bot1){
+  spider.x=spider.x+20
+}
+
+
+
