@@ -811,7 +811,3 @@ function lavavol(){
 
 
 }
-
-function touchStarted(){
-  spider.x=spider.x+8
-}
